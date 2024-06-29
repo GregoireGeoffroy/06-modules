@@ -15,5 +15,21 @@
       export code to another program, and the import keyword to import code from
       another program.
     </p>
+    <script type="module">
+      import {
+        inventory as numberInventory,
+        addValue as addNumber
+      } from './numberInventory.js';
+      import {
+        inventory as stringInventory,
+        addValue as addString
+      } from './stringInventory.js';
+      console.log({ numberInventory, stringInventory});
+      console.log({ addNumber, addString})
+      addNumber(3);
+      addNumber(4);
+
+      console.log({ addNumber, addString});
+    </script>
   </body>
 </html>
