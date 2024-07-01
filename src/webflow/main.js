@@ -1,1 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {});
+import GameController from "./GameController.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+    new GameController();
+});
